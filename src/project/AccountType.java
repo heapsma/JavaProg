@@ -21,9 +21,9 @@ public enum AccountType {
 
     private AccountType(int typeIndex, String typeName) {
 
-        if (typeName.equals("SAVINGS")) {
-            monthlyInterest = account.getBalance() * .05;
-        }
+//        if (typeName.equals("SAVINGS")) {
+//            monthlyInterest = account.getBalance() * .05;
+//        }
 
         this.typeIndex = typeIndex;
         this.typeName = typeName;

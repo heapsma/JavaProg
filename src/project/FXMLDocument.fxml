@@ -28,17 +28,17 @@
         <TextField fx:id="txtAddress" alignment="CENTER" layoutX="212.0" layoutY="603.0" prefHeight="39.0" prefWidth="115.0" promptText="Address" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
         <TextField fx:id="txtPin" alignment="CENTER" layoutX="530.0" layoutY="603.0" prefHeight="39.0" prefWidth="74.0" promptText="Pin" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
         <TextField fx:id="txtName" alignment="CENTER" layoutX="113.0" layoutY="603.0" prefHeight="39.0" prefWidth="81.0" promptText="Name" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
-        <Button layoutX="617.0" layoutY="603.0" mnemonicParsing="true" onAction="#add" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Add">
+        <Button fx:id="btnAdd" layoutX="617.0" layoutY="603.0" mnemonicParsing="true" onAction="#add" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Add">
             <effect>
                 <Glow />
             </effect>
         </Button>
-        <Button layoutX="701.0" layoutY="603.0" mnemonicParsing="true" onAction="#remove" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Remove">
+        <Button fx:id="btnRemove" layoutX="701.0" layoutY="603.0" mnemonicParsing="true" onAction="#remove" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Remove">
             <effect>
                 <Glow />
             </effect>
         </Button>
-        <Button layoutX="785.0" layoutY="603.0" mnemonicParsing="true" onAction="#transaction" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Transaction">
+        <Button fx:id="btnTransaction" layoutX="785.0" layoutY="603.0" mnemonicParsing="true" onAction="#transaction" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Transaction">
             <effect>
                 <Glow />
             </effect>

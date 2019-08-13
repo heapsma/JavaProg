@@ -13,11 +13,11 @@ public class Account {
     private AccountType accountType;
     private double balance;
 
-    public Account(String name, int Id, String address, String pin, AccountType accountType) {
+    public Account(String name, int Id, String address, AccountType accountType) {
         this.name = name;
         this.Id = Id;
         this.address = address;
-        this.pin = pin;
+        // this.pin = pin;
         this.accountType = accountType;
     }
 
@@ -76,8 +76,7 @@ public class Account {
 
     public boolean isAddressValid(String address) {
 
-        String validAddress = "^[0-9]*\\s[a-zA-Z]*[A-Z][0-9][A-Z]\\s[0-9][A-Z][0-9]";
-        //String validAddress = "^(?!.[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$";
+        String validAddress = "^[0-9]*\\s[a-zA-Z]*\\s[a-zA-Z]*\\s[A-Z][0-9][A-Z]\\s[0-9][A-Z][0-9]";
         if (address.matches(validAddress)) {
             return true;
         }
