@@ -21,8 +21,8 @@ public class Account {
         this.accountType = accountType;
     }
 
-    public void setBalance(Double balance) {
-        this.balance = balance;
+    public Double getBalance() {
+        return balance;
     }
 
     public void setPin(String pin) {
