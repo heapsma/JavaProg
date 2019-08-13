@@ -21,7 +21,7 @@ public class Account {
         this.accountType = accountType;
     }
 
-    public Double getBalance() {
+    public double getBalance() {
         return balance;
     }
 
