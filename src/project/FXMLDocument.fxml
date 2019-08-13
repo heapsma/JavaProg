@@ -10,7 +10,7 @@
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #7546b3; -fx-border-color: #bf964e; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FXMLDocumentController">
+<AnchorPane fx:id="main" id="AnchorPane" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #7546b3; -fx-border-color: #bf964e; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FXMLDocumentController">
     <stylesheets>
         <URL value="@css/styles.css" />
     </stylesheets> 

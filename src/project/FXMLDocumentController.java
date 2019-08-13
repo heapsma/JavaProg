@@ -5,18 +5,22 @@
  */
 package project;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 /**
  *
@@ -44,6 +48,11 @@ public class FXMLDocumentController implements Initializable {
 
     // List to be displayed on the TableView
     private ObservableList<Account> accountList = FXCollections.observableArrayList();
+    
+    @FXML
+    private AnchorPane main, first;
+    @FXML
+    private TabPane transaction;
 
     @FXML
     private void add(ActionEvent event) {
@@ -76,8 +85,12 @@ public class FXMLDocumentController implements Initializable {
     }
 
     @FXML
-    private void transaction(ActionEvent event) {
+    private void transaction(ActionEvent event) throws IOException {
 
+        
+        TabPane pane = FXMLLoader.load(getClass().getResource("FXMLTransaction.fxml"));
+        main.getChildren().setAll(pane);
+        
     }
     
     public void alertError(String text) {
