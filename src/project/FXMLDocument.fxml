@@ -10,41 +10,51 @@
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #7546b3; -fx-border-color: #bf964e; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FXMLDocumentController">
+<AnchorPane fx:id="main" id="AnchorPane" prefHeight="925.0" prefWidth="1290.0" style="-fx-background-color: #7546b3; -fx-border-color: #bf964e; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FXMLDocumentController">
     <stylesheets>
         <URL value="@css/styles.css" />
     </stylesheets> 
     <children>
-        <TextField fx:id="txtSearch" alignment="CENTER" layoutX="50.0" layoutY="26.0" prefHeight="39.0" prefWidth="800.0" promptText="Name OR Industry OR Phone Number OR Location" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
+        <TextField fx:id="txtSearch" alignment="CENTER" layoutX="256.0" layoutY="29.0" prefHeight="39.0" prefWidth="800.0" promptText="Name OR Industry OR Phone Number OR Location" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
         <TableView fx:id="tblAccount" editable="true" layoutX="60.0" layoutY="84.0" prefHeight="510.0" prefWidth="788.0" style="-fx-background-color: #bf964e; -fx-font-weight: bold; -fx-font-color: blue;" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="84.0">
             <columns>
-                <TableColumn fx:id="tblID" prefWidth="115.0" text="ID" />
-                <TableColumn fx:id="tblName" prefWidth="168.0" text="Name" />
-                <TableColumn fx:id="tblAddress" prefWidth="257.0" text="Address" />
-                <TableColumn fx:id="tblType" prefWidth="206.0" text="Account Type" />
+                <TableColumn fx:id="tblID" prefWidth="146.0" text="ID" />
+                <TableColumn fx:id="tblName" prefWidth="224.0" text="Name" />
+                <TableColumn fx:id="tblAddress" prefWidth="450.0" text="Address" />
+                <TableColumn fx:id="tblType" prefWidth="315.0" text="Account Type" />
             </columns>
         </TableView>
-        <TextField fx:id="txtID" alignment="CENTER" layoutX="23.0" layoutY="603.0" prefHeight="39.0" prefWidth="74.0" promptText="ID" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
-        <TextField fx:id="txtAddress" alignment="CENTER" layoutX="212.0" layoutY="603.0" prefHeight="39.0" prefWidth="115.0" promptText="Address" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
-        <TextField fx:id="txtPin" alignment="CENTER" layoutX="530.0" layoutY="603.0" prefHeight="39.0" prefWidth="74.0" promptText="Pin" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
-        <TextField fx:id="txtName" alignment="CENTER" layoutX="113.0" layoutY="603.0" prefHeight="39.0" prefWidth="81.0" promptText="Name" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
-        <Button fx:id="btnAdd" layoutX="617.0" layoutY="603.0" mnemonicParsing="true" onAction="#add" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Add">
+        <TextField fx:id="txtID" alignment="CENTER" layoutX="76.0" layoutY="809.0" prefHeight="39.0" prefWidth="56.0" promptText="ID" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
+        <TextField fx:id="txtAddress" alignment="CENTER" layoutX="265.0" layoutY="809.0" prefHeight="39.0" prefWidth="189.0" promptText="Address" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
+        <TextField fx:id="txtPin" alignment="CENTER" layoutX="663.0" layoutY="809.0" prefHeight="39.0" prefWidth="74.0" promptText="Pin" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
+        <TextField fx:id="txtName" alignment="CENTER" layoutX="144.0" layoutY="809.0" prefHeight="39.0" prefWidth="101.0" promptText="Name" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;" />
+        <Button fx:id="btnAdd" layoutX="755.0" layoutY="809.0" mnemonicParsing="true" onAction="#add" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Add">
             <effect>
                 <Glow />
             </effect>
         </Button>
-        <Button fx:id="btnRemove" layoutX="701.0" layoutY="603.0" mnemonicParsing="true" onAction="#remove" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Remove">
+      <Button fx:id="btnSave" layoutX="847.0" layoutY="809.0" mnemonicParsing="true" onAction="#save" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Save">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+        <Button fx:id="btnRemove" layoutX="939.0" layoutY="809.0" mnemonicParsing="true" onAction="#remove" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Remove">
             <effect>
                 <Glow />
             </effect>
         </Button>
-        <Button fx:id="btnTransaction" layoutX="785.0" layoutY="603.0" mnemonicParsing="true" onAction="#transaction" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Transaction">
+      <Button fx:id="btnExit" layoutX="1146.0" layoutY="809.0" mnemonicParsing="true" onAction="#exit" prefHeight="39.0" prefWidth="74.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Exit">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+        <Button fx:id="btnTransaction" layoutX="1034.0" layoutY="809.0" mnemonicParsing="true" onAction="#transaction" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Transaction">
             <effect>
                 <Glow />
             </effect>
         </Button>
-        <Label layoutX="50.0" layoutY="659.0" text="To edit: click row, edit, and press Enter." textFill="WHITE" />
-        <Label layoutX="269.0" layoutY="659.0" text="To delete: click row, and click Remove button." textFill="WHITE" />
-        <ComboBox fx:id="cmbType" layoutX="344.0" layoutY="603.0" prefHeight="39.0" prefWidth="173.0" promptText="Account Type" style="-fx-background-color: #bf964e; -fx-region-border: #bf964e;" />
+        <Label layoutX="76.0" layoutY="865.0" text="To edit: click row, edit, and press Enter." textFill="WHITE" />
+        <Label layoutX="304.0" layoutY="865.0" text="To delete: click row, and click Remove button." textFill="WHITE" />
+        <ComboBox fx:id="cmbType" layoutX="472.0" layoutY="809.0" prefHeight="39.0" prefWidth="173.0" promptText="Account Type" style="-fx-background-color: #bf964e; -fx-region-border: #bf964e;" />
     </children>
 </AnchorPane>

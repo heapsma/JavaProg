@@ -13,6 +13,10 @@ public class Account {
     private AccountType accountType;
     private double balance;
 
+    public Account() {
+
+    }
+
     public Account(String name, int Id, String address, AccountType accountType) {
         this.name = name;
         this.Id = Id;
@@ -67,7 +71,7 @@ public class Account {
     }
 
     public boolean isValidName(String name) {
-        String validName = "^[a-zA-Z]+$";
+        String validName = "^[a-zA-Z]*\\s[a-zA-Z]*";
         if (name.matches(validName)) {
             return true;
         }
