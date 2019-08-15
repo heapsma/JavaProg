@@ -5,16 +5,41 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="first" prefHeight="925.0" prefWidth="1290.0" style="-fx-background-color: #7546b3; -fx-border-color: #bf964e; -fx-border-width: 10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="project.FXMLControllerLogin">
+<AnchorPane fx:id="first" prefHeight="925.0" prefWidth="1290.0" style="-fx-background-color: #7546b3; -fx-border-color: #bf964e; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FXMLControllerLogin">
     <children>
-        <Label layoutX="272.0" layoutY="334.0" text="PIN" />
-        <PasswordField fx:id="passPass" layoutX="310.0" layoutY="330.0" promptText="PIN" />
-        <Label layoutX="241.0" layoutY="277.0" text="Admin ID" />
-        <TextField fx:id="txtAdmin" layoutX="310.0" layoutY="273.0" promptText="Admin ID" />
-        <Button fx:id="button" layoutX="345.0" layoutY="380.0" mnemonicParsing="false" onAction="#loadSecond" text="Log In" />
+        <Label layoutX="279.0" layoutY="146.0" text="Royal Bank Managers" textFill="#bf964e">
+            <font>
+                <Font name="Forte" size="75.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAdmin" layoutX="567.0" layoutY="389.0" prefHeight="40.0" prefWidth="165.0" promptText="Admin ID" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;">
+            <font>
+                <Font name="Candara Bold Italic" size="20.0" />
+            </font>
+        </TextField>
+        <Button fx:id="button" layoutX="563.0" layoutY="545.0" mnemonicParsing="true" onAction="#loadSecond" prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: #6e3b87; -fx-text-fill: #bf964e; -fx-border-color: #bf964e; -fx-border-width: 6;" text="_Log In">
+            <font>
+                <Font name="Franklin Gothic Heavy" size="20.0" />
+            </font>
+        </Button>
         <Label fx:id="lblError" layoutX="96.0" layoutY="72.0" />
-
+        <Label layoutX="413.0" layoutY="389.0" text="Admin ID" textFill="#bf964e">
+            <font>
+                <Font name="Franklin Gothic Heavy" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="477.0" layoutY="478.0" text="PIN" textFill="#bf964e">
+            <font>
+                <Font name="Franklin Gothic Heavy" size="25.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="passPass" layoutX="563.0" layoutY="472.0" prefHeight="40.0" prefWidth="165.0" promptText="PIN" style="-fx-background-color: #bf964e; -fx-prompt-text-fill: #6e3b87;">
+            <font>
+                <Font name="Candara Bold Italic" size="20.0" />
+            </font>
+        </PasswordField>
     </children>
   
 </AnchorPane>

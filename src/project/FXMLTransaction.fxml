@@ -7,8 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<TabPane fx:id="transaction" prefHeight="925.0" prefWidth="1290.0" style="-fx-background-color: #7546b3; -fx-border-color: #bf964e; -fx-border-width: 10;" tabClosingPolicy="UNAVAILABLE"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FXMLControllerTransaction">
+<TabPane fx:id="transaction" prefHeight="925.0" prefWidth="1290.0" style="-fx-background-color: #7546b3; -fx-border-color: #bf964e; -fx-border-width: 10;" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="project.FXMLControllerTransaction">
    <tabs>
       <Tab text="Withdraw">
          <content>
